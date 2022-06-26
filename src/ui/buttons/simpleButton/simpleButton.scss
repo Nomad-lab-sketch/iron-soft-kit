@@ -1,0 +1,24 @@
+@import "../../common.scss";
+
+.btn-simple {
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  background-color: var(--background-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: whitesmoke;
+  transition: 0.5s;
+  cursor: pointer;
+
+  @extend %button-input-size;
+  @extend %font-size-common;
+
+  &:disabled {
+    background-color: "#006f367a";
+    cursor: "auto";
+  }
+}
+
+.btn-simple:hover {
+  background-color: var(--background-color);
+  @extend %opacity;
+}

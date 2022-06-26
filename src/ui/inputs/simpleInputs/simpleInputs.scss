@@ -1,0 +1,69 @@
+@import "../../common.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .main {
+    @extend %button-input-size;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @extend %button-input-size;
+
+    & label {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      @extend %font-size-common;
+
+      & .content-placeholder {
+        display: flex;
+        position: absolute;
+        top: 38%;
+        right: 0;
+        left: 2.7%;
+        padding: 3px;
+        transition: 0.4s;
+        max-width: 90%;
+        user-select: none;
+        justify-content: center;
+        cursor: text;
+        overflow: hidden;
+
+        @extend %font-span;
+      }
+
+      & .content-input {
+        @extend %input-common;
+        @extend %font-size-input;
+        transition: 0.5s;
+
+        &:focus,
+        &:not([value=""]) {
+          outline: none;
+          border-color: var(--background-color);
+
+          + .content-placeholder {
+            top: -15%;
+            left: 20px;
+            max-width: 70%;
+            height: 17px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid var(--background-color);
+            box-shadow: 0px 0px 2px #bdbdbd;
+          }
+        }
+      }
+    }
+  }
+}

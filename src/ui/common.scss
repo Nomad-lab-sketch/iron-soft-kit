@@ -1,0 +1,80 @@
+//^ --default-color--
+
+:root {
+  --background-color: #17a2b8;
+  --first-font-female: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --second-font-female: "Times New Roman", Times, serif;
+  --third-font-female: "Times New Roman", Times, serif;
+}
+
+body {
+  font-family: var(--first-font-female);
+}
+
+text {
+  font-family: var(--second-font-female);
+}
+
+input {
+  font-family: var(--second-font-female);
+}
+
+label {
+  font-family: var(--second-font-female);
+}
+
+span {
+  font-family: var(--third-font-female);
+}
+
+button {
+  font-family: var(--third-font-female);
+}
+
+ul li {
+  font-family: var(--third-font-female);
+}
+
+//^ --common-style--
+
+%margin-padding {
+  margin: 8px;
+  padding: 8px;
+}
+
+%font-size-common {
+  font-size: 22px;
+}
+
+//^--input-button--
+
+%font-size-input {
+  font-size: 18px;
+}
+
+%font-span {
+  color: grey;
+  font-size: 15px;
+}
+
+%button-input-size {
+  max-width: 750px;
+  max-height: 75px;
+  width: 100%;
+  height: 75px;
+}
+
+%input-common {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border: solid 2px #f2f2f2;
+  border-radius: 10px;
+}
+
+%opacity {
+  opacity: 0.8;
+}
+
+//^--input-button--
