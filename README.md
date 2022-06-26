@@ -30,7 +30,7 @@ A library of ready-made components and utilities for a quick start of developmen
 
 ---
 
-And of course Dillinger itself is open source with a [public repository][dill]
+And of course Dillinger itself is open source with a [public repository][https://github.com/nomad-lab-sketch/iron-soft-kit]
 on GitHub.
 
 ## Installation
