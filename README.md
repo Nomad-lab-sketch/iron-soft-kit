@@ -9,10 +9,10 @@ A library of ready-made components and utilities for a quick start of developmen
 ## Components
 
 - PopupHint - pop-up windows
-- SimpleInputs - You don't have to configure it ;)
+- simpleInput- You don't have to configure it ;)
 
 ```
-<SimpleInputs type={AttributeTypeInput.text} placeholder={"Enter text"} value={value} readonly={false} onChange={didOnChange}/>
+<SimpleInput type={AttributeTypeInput.text} placeholder={"Enter text"} value={value} readonly={false} onChange={didOnChange}/>
 ```
 
 - SimpleButton - Just a button, yes, just a ready-made button
@@ -37,12 +37,6 @@ on GitHub.
 
 ```sh
 npm i iron-soft-kit
-```
-
-## Version
-
-```sh
-1.0.1
 ```
 
 **Free Software, Hell Yeah!**

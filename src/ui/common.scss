@@ -1,10 +1,22 @@
-//^ --default-color--
-
 :root {
-  --background-color: #17a2b8;
+  //--color--
+
+  --background-color-one: #17a2b8;
+  --background-color-two: #17a2b8;
+
+  --border-color-one: grey;
+
+  //--font--
+
   --first-font-female: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --second-font-female: "Times New Roman", Times, serif;
   --third-font-female: "Times New Roman", Times, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -31,7 +43,13 @@ button {
   font-family: var(--third-font-female);
 }
 
-ul li {
+input[type="text"] {
+  text-indent: 20px;
+}
+
+ul,
+li {
+  list-style-type: none;
   font-family: var(--third-font-female);
 }
 
@@ -59,22 +77,18 @@ ul li {
 
 %button-input-size {
   max-width: 750px;
-  max-height: 75px;
   width: 100%;
-  height: 75px;
+  height: 55px;
 }
 
 %input-common {
   outline: none;
   width: 100%;
   height: 100%;
-  border: none;
-  border: solid 2px #f2f2f2;
-  border-radius: 10px;
+  border: solid 1px #f2f2f2;
+  border-radius: 5px;
 }
 
 %opacity {
   opacity: 0.8;
 }
-
-//^--input-button--

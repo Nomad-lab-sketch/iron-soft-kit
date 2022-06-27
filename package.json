@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "if exist dist ( rd /S /Q dist)",
     "updateLink": "npm run clean && tsc && npm rm my-lib -g && npm link",
-    "webpack": "webpack",
+    "build-kit": "webpack",
     "pub": "webpack && npm version patch && npm publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -27,6 +27,8 @@
     "@types/react": "^18.0.14",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.53.0",

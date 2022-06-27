@@ -1,0 +1,45 @@
+@import "../../common.scss";
+
+.simpleInput-data-list {
+  max-width: 750px;
+  height: 100%;
+  min-height: 60px;
+  font-size: 16px;
+  padding-bottom: -20px;
+
+  & ul {
+    overflow: auto;
+    max-height: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid var(--border-color-one);
+    border-right: 1px solid var(--border-color-one);
+    border-bottom: 1px solid var(--border-color-one);
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: #636363;
+
+    &::-webkit-scrollbar {
+      display: none; /* Скрываем scrollbar для Chrome, Safari и Opera */
+    }
+
+    & {
+      -ms-overflow-style: none; /* IE и Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+
+    li {
+      border-bottom: 1px solid var(--border-color-one);
+      width: 100%;
+      height: 100%;
+      text-align: start;
+      cursor: pointer;
+      padding: 20px;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

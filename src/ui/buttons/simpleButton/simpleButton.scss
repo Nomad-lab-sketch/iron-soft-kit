@@ -2,7 +2,7 @@
 
 .btn-simple {
   border: 1px solid rgba(0, 0, 0, 0.116);
-  background-color: var(--background-color);
+  background-color: var(--background-color-one);
   overflow: hidden;
   text-overflow: ellipsis;
   color: whitesmoke;
@@ -19,6 +19,6 @@
 }
 
 .btn-simple:hover {
-  background-color: var(--background-color);
+  background-color: var(--background-color-one);
   @extend %opacity;
 }

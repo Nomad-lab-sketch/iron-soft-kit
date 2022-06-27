@@ -1,40 +1,36 @@
 @import "../../common.scss";
 
-.wrapper {
+.simpleInput-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  @extend %button-input-size;
 
-  .main {
-    @extend %button-input-size;
-  }
-
-  .content {
+  .simpleInput-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 
-    @extend %button-input-size;
-
-    & label {
+    label {
       position: relative;
       width: 100%;
       height: 100%;
       transition: 0.5s;
       @extend %font-size-common;
 
-      & .content-placeholder {
+      .simpleInput-content-placeholder {
         display: flex;
         position: absolute;
-        top: 38%;
+        top: 28%;
         right: 0;
         left: 2.7%;
         padding: 3px;
         transition: 0.4s;
         max-width: 90%;
         user-select: none;
+        align-items: center;
         justify-content: center;
         cursor: text;
         overflow: hidden;
@@ -42,7 +38,7 @@
         @extend %font-span;
       }
 
-      & .content-input {
+      .simpleInput-content-input {
         @extend %input-common;
         @extend %font-size-input;
         transition: 0.5s;
@@ -50,18 +46,24 @@
         &:focus,
         &:not([value=""]) {
           outline: none;
-          border-color: var(--background-color);
+          border-color: var(--background-color-one);
 
-          + .content-placeholder {
-            top: -15%;
+          + .simpleInput-content-placeholder {
+            top: -19%;
             left: 20px;
             max-width: 70%;
-            height: 17px;
+            height: 20px;
             text-align: center;
-            background-color: white;
-            border: 1px solid var(--background-color);
-            box-shadow: 0px 0px 2px #bdbdbd;
+            background-color: #f8f8f8;
+            border: 1px dashed var(--background-color-one);
+            box-shadow: 0px 0px 2px #858585;
           }
+        }
+
+        .simpleInput-content-dataList {
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
