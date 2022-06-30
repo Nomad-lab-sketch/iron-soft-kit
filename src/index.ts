@@ -7,17 +7,12 @@ import { classNameBuilder } from "./utils/className";
 import { AttributeTypeInput } from "./models/common";
 
 export {
-  // -- ui components --
+  /*---------- UI components  ----------*/
   SimpleButton,
   SimpleInput,
-  // -- ui components --
-
-  // -- utils --
+  /*----------  Utils  ----------*/
   classNameBuilder,
   switchTheme,
-  // -- utils --
-
-  // --models --
+  /*----------  Models  ----------*/
   AttributeTypeInput,
-  // --models --
 };
