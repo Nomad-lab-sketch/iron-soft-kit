@@ -1,8 +1,7 @@
-import React from "react";
-import "./simpleButton.scss";
+import React from 'react';
 export declare type Props = {
     children: string;
-    type: "button" | "reset";
+    type: 'button' | 'reset';
     readonly?: boolean;
     onClick?: () => void;
 };

@@ -8,11 +8,16 @@ module.exports = {
 		"@storybook/addon-essentials",
 		"@storybook/addon-interactions",
 		{
-			name: 'storybook-addon-sass-postcss',
+			name: `@storybook/preset-scss`,
 			options: {
 				rule: {
-					test: /\.(scss|sass)$/i,
+					test: /\.module\.s[ca]ss$/,
 				},
+				cssLoaderOptions: {
+					modules: {
+						localIdentName: '[name]__[local]--[hash:base64:5]',
+					},
+				}
 			},
 		},
 	],

@@ -1,7 +1,5 @@
-import React from "react";
-import { AttributeTypeInput } from "../../../models/common";
-import "./simpleInput.scss";
-import "./dataList.scss";
+import React from 'react';
+import { AttributeTypeInput } from '../../../models/common';
 export interface DataList {
     data: string;
 }

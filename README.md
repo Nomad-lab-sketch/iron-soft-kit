@@ -2,9 +2,11 @@
 
 A library of ready-made components and utilities for a quick start of development.
 
+Библиотека готовых компонентов и утилит для быстрого старта разработки.
+
 ---
 
-Библиотека готовых компонентов и утилит для быстрого старта разработки.
+The list of components and utilities will be constantly expanding
 
 ## Components
 
@@ -19,6 +21,7 @@ A library of ready-made components and utilities for a quick start of developmen
 
 ## Utils
 
+- switchTheme
 - classNameBuilder
 
 ## Models
