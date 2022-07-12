@@ -1,0 +1,53 @@
+@import '../common.scss';
+
+.wrapper {
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    .child-popupHint {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 350px;
+      min-width: 100px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: grey;
+      color: whitesmoke;
+      border-radius: 10px;
+      padding: 10px;
+      opacity: 0;
+      transition: 0.5s;
+      visibility: hidden;
+      font-size: 15px;
+      z-index: 1;
+
+      .child-popupHint-triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+      }
+    }
+
+    &:hover {
+      .child-popupHint {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}

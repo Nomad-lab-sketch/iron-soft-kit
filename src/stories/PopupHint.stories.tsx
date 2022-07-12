@@ -1,21 +1,26 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
+import PopupHint from '../ui/PopupHint/PopupHint';
+import SimpleButton from '../ui/buttons/simpleButton/SimpleButton';
 import SimpleInput, { DataList } from '../ui/inputs/simpleInput/SimpleInput';
-import { AttributeTypeInput } from '../models/common';
+import { AlignItems, AttributeTypeInput, Offset } from '../models/common';
 
 export default {
-  title: 'Example/SimpleInputs',
-  component: SimpleInput
+  title: 'Example/PopupHint',
+  component: PopupHint
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-} as ComponentMeta<typeof SimpleInput>;
+} as ComponentMeta<typeof PopupHint>;
 
-const Template: ComponentStory<typeof SimpleInput> = (args) => (
-  <SimpleInput {...args} />
+const Template: ComponentStory<typeof PopupHint> = (args) => (
+  <PopupHint {...args} />
 );
 
-const event = (e: string): string => {
-  return e;
+export const button = Template.bind({});
+button.args = {
+  text: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
+  children: <SimpleButton type={'button'}>Hello</SimpleButton>,
+  offsetLabel: Offset.top_right_side
 };
 
 const dataList: DataList[] = [
@@ -44,11 +49,15 @@ const dataList: DataList[] = [
   { data: 'Очищает список' }
 ];
 
-export const label = Template.bind({});
-label.args = {
-  placeholder: 'Введите инн вашей компании',
-  type: AttributeTypeInput.text,
-  label: 'Какой то label',
-  dataList: dataList,
-  onChange: event
+export const input = Template.bind({});
+input.args = {
+  text: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
+  children: (
+    <SimpleInput
+      type={AttributeTypeInput.text}
+      dataList={dataList}
+      placeholder={'Какой то текст'}
+    />
+  ),
+  offsetLabel: Offset.top_right_side
 };

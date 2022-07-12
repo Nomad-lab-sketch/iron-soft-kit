@@ -1,24 +1,28 @@
-@import "../../common.scss";
+@import '../../common.scss';
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn-simple {
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    background-color: var(--background-color-one);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: whitesmoke;
+    transition: 0.5s;
+    cursor: pointer;
 
-.btn-simple {
-  border: 1px solid rgba(0, 0, 0, 0.116);
-  background-color: var(--background-color-one);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: whitesmoke;
-  transition: 0.5s;
-  cursor: pointer;
+    @extend %button-input-size;
+    @extend %font-size-common;
 
-  @extend %button-input-size;
-  @extend %font-size-common;
-
-  &:disabled {
-    background-color: "#006f367a";
-    cursor: "auto";
+    &:disabled {
+      background-color: '#006f367a';
+      cursor: 'auto';
+    }
   }
-}
 
-.btn-simple:hover {
-  background-color: var(--background-color-one);
-  @extend %opacity;
+  .btn-simple:hover {
+    background-color: var(--background-color-one);
+    @extend %opacity;
+  }
 }

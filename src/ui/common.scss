@@ -1,16 +1,12 @@
 :root {
-  //--color--
-
   --background-color-one: #17a2b8;
   --background-color-two: #17a2b8;
 
   --border-color-one: grey;
 
-  //--font--
-
-  --first-font-female: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --second-font-female: "Times New Roman", Times, serif;
-  --third-font-female: "Times New Roman", Times, serif;
+  --first-font-female: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --second-font-female: 'Times New Roman', Times, serif;
+  --third-font-female: 'Times New Roman', Times, serif;
 }
 
 * {
@@ -43,7 +39,7 @@ button {
   font-family: var(--third-font-female);
 }
 
-input[type="text"] {
+input[type='text'] {
   text-indent: 20px;
 }
 
@@ -77,6 +73,7 @@ li {
 
 %button-input-size {
   max-width: 750px;
+  min-width: 300px;
   width: 100%;
   height: 55px;
 }

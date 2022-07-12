@@ -56,7 +56,7 @@ const DataListInput = ({
   );
 };
 
-const simpleInput: React.FC<Props> = ({
+const SimpleInput: React.FC<Props> = ({
   onChange,
   placeholder,
   type,
@@ -144,4 +144,4 @@ const simpleInput: React.FC<Props> = ({
   );
 };
 
-export default simpleInput;
+export default SimpleInput;

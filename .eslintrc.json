@@ -1,4 +1,8 @@
 {
+	// fix rules for webpack.config.js
+	"ignorePatterns": [
+		"webpack.config.js"
+	],
 	"env": {
 		"browser": true,
 		"es2021": true

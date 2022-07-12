@@ -21,7 +21,7 @@ The list of components and utilities will be constantly expanding
 
 ## Utils
 
-- switchTheme
+- changeVariableStyles
 - classNameBuilder
 
 ## Models

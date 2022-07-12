@@ -1,5 +1,14 @@
+import { Root } from '../models/common';
 import './common.scss';
 
-export const switchTheme = ({ color }: { color: string }) => {
-  document.body.style.setProperty('--background-color-one', color);
+export const changeVariableStyles = ({
+  variable,
+  meaning
+}: {
+  variable: Root;
+  meaning: string;
+}) => {
+  if (variable && meaning) {
+    document.body.style.setProperty(variable, meaning);
+  }
 };
