@@ -6,12 +6,14 @@ export enum AttributeTypeInput {
 //note> Types for Styles
 
 export enum Root {
+  //note> --color--
+
   backgroundColorOne = '--background-color-one',
   backgroundColorTwo = '--background-color-two',
 
   borderColorOne = '--border-color-one',
 
-  //--font--
+  //note> --font--
 
   firstFontFemale = '--first-font-female',
   secondFontFemale = '--second-font-female',

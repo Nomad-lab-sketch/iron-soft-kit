@@ -2,9 +2,17 @@ export declare enum AttributeTypeInput {
     text = "text",
     password = "password"
 }
+export declare enum Root {
+    backgroundColorOne = "--background-color-one",
+    backgroundColorTwo = "--background-color-two",
+    borderColorOne = "--border-color-one",
+    firstFontFemale = "--first-font-female",
+    secondFontFemale = "--second-font-female",
+    thirdFontFemale = "--third-font-female"
+}
 export declare enum AlignItems {
-    flex_start = " flex-start",
     flex_end = "flex-end",
+    flex_start = "flex-start",
     center = "center",
     baseline = "baseline",
     stretch = "stretch",

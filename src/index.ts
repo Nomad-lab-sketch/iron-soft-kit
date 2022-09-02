@@ -1,10 +1,8 @@
-import SimpleButton from "./ui/buttons/simpleButton/SimpleButton";
-import SimpleInput from "./ui/inputs/simpleInput/SimpleInput";
+import SimpleButton from './ui/buttons/simpleButton/SimpleButton';
+import SimpleInput from './ui/inputs/Autocomplete/Autocomplete';
+import { classNameBuilder } from './utils/className';
 
-import { switchTheme } from "./ui/common";
-import { classNameBuilder } from "./utils/className";
-
-import { AttributeTypeInput } from "./models/common";
+import { AttributeTypeInput } from './models/common';
 
 export {
   /*---------- UI components  ----------*/
@@ -12,7 +10,6 @@ export {
   SimpleInput,
   /*----------  Utils  ----------*/
   classNameBuilder,
-  switchTheme,
   /*----------  Models  ----------*/
-  AttributeTypeInput,
+  AttributeTypeInput
 };

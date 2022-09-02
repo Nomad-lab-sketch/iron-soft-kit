@@ -1,24 +1,6 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { DataList } from '../../ui/inputs/Autocomplete/Autocomplete';
 
-import SimpleInput, { DataList } from '../ui/inputs/simpleInput/SimpleInput';
-import { AttributeTypeInput } from '../models/common';
-
-export default {
-  title: 'Example/SimpleInputs',
-  component: SimpleInput
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-} as ComponentMeta<typeof SimpleInput>;
-
-const Template: ComponentStory<typeof SimpleInput> = (args) => (
-  <SimpleInput {...args} />
-);
-
-const event = (e: string): string => {
-  return e;
-};
-
-const dataList: DataList[] = [
+export const dataList: DataList[] = [
   { data: 'Добавляет элемент в конец списка' },
   { data: 'Расширяет список list, добавляя в конец все элементы списка L' },
   { data: 'Вставляет на i-ый элемент значение x' },
@@ -35,20 +17,5 @@ const dataList: DataList[] = [
   { data: 'Сортирует список на основе функции' },
   { data: 'Разворачивает список' },
   { data: 'Поверхностная копия списка' },
-  { data: 'Очищает список' },
-  { data: 'Очищает список' },
-  { data: 'Очищает список' },
-  { data: 'Очищает список' },
-  { data: 'Очищает список' },
-  { data: 'Очищает список' },
   { data: 'Очищает список' }
 ];
-
-export const label = Template.bind({});
-label.args = {
-  placeholder: 'Введите инн вашей компании',
-  type: AttributeTypeInput.text,
-  label: 'Какой то label',
-  dataList: dataList,
-  onChange: event
-};

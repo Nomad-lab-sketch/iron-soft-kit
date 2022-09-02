@@ -1,12 +1,17 @@
 :root {
   --background-color-one: #17a2b8;
-  --background-color-two: #17a2b8;
+  --background-color-two: #238998;
+  --background-color-default: whitesmoke;
+
+  --background-color-success: #17b81f;
+  --background-color-warning: #cedb1a;
+  --background-color-danger: #b81717;
 
   --border-color-one: grey;
 
   --first-font-female: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --second-font-female: 'Times New Roman', Times, serif;
-  --third-font-female: 'Times New Roman', Times, serif;
+  --third-font-female: 'Tahoma';
 }
 
 * {
@@ -72,8 +77,8 @@ li {
 }
 
 %button-input-size {
-  max-width: 750px;
-  min-width: 300px;
+  max-width: 600px;
+  min-width: 100px;
   width: 100%;
   height: 55px;
 }
@@ -82,7 +87,7 @@ li {
   outline: none;
   width: 100%;
   height: 100%;
-  border: solid 1px #f2f2f2;
+  border: solid 1px #d9d9d9;
   border-radius: 5px;
 }
 

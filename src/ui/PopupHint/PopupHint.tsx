@@ -37,13 +37,7 @@ interface BorderTriangle {
 }
 type PositionTriangle = AbsolutePosition | BorderTriangle;
 
-const PopupHint: React.FC<Props> = ({
-  offsetLabel,
-  children,
-  text,
-  marginPopupHint,
-  position = AlignItems.center
-}) => {
+const PopupHint: React.FC<Props> = ({ offsetLabel, children, text, marginPopupHint, position = AlignItems.center }) => {
   const [offset, setOffset] = useState<AbsolutePosition | Size>({
     top: 'auto',
     left: 'auto',
@@ -52,20 +46,14 @@ const PopupHint: React.FC<Props> = ({
   });
 
   const [positionTriangle, setPositionTriangle] = useState<PositionTriangle>();
-  const [positionBlock, setPositionBlock] =
-    useState<{ alignItems: AlignItems }>();
+  const [positionBlock, setPositionBlock] = useState<{ alignItems: AlignItems }>();
   const [heightPopupHint, setHeightPopupHint] = useState<number>();
   const setMargin = (margin: number | string | undefined) => {
     return margin ? margin : 80;
   };
 
   const changingPositionHint = (
-    {
-      top = 'auto',
-      left = 'auto',
-      right = 'auto',
-      bottom = 'auto'
-    }: AbsolutePosition,
+    { top = 'auto', left = 'auto', right = 'auto', bottom = 'auto' }: AbsolutePosition,
     {
       positionTop = 'auto',
       positionLeft = 'auto',
@@ -222,10 +210,7 @@ const PopupHint: React.FC<Props> = ({
         {children}
         <div className={s['child-popupHint']} style={offset} ref={ref}>
           {text}
-          <span
-            className={s['child-popupHint-triangle']}
-            style={positionTriangle as React.CSSProperties}
-          ></span>
+          <span className={s['child-popupHint-triangle']} style={positionTriangle as React.CSSProperties}></span>
         </div>
       </div>
     </div>

@@ -7,10 +7,9 @@ interface Props {
     placeholder?: string;
     value?: string;
     type: AttributeTypeInput;
-    label?: string;
     readonly?: boolean;
     dataList: DataList[];
     onChange?: (e: string) => string;
 }
-declare const simpleInput: React.FC<Props>;
-export default simpleInput;
+declare const Autocomplete: React.FC<Props>;
+export default Autocomplete;
