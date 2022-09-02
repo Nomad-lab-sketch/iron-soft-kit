@@ -16,6 +16,7 @@
 	"include": [
 		"src",
 		"declaration.d.ts",
+		"custom.d.ts"
 	],
 	"exclude": [
 		"node_modules",

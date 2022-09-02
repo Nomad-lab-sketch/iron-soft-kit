@@ -43,7 +43,7 @@
 		"max-len": [
 			"warn",
 			{
-				"code": 130
+				"code": 200
 			}
 		],
 		"semi": [
